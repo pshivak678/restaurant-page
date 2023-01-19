@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url('./myfont.ttf') format('woff2'),
+      url('./myfont.ttf') format('woff');
+    font-weight:bold;
+    font-style: normal;
+    font-size: larger;
+  }
+  @font-face {
+    font-family: 'MyFont2';
+    src: url('./font2.ttf') format('woff2'),
+      url('./font2.ttf') format('woff');
+    font-weight:bold;
+    font-style: normal;
+    font-size: larger;
+  }
+
+body{
+    font-family: 'MyFont';
+    background-image: url(./icon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header{
+    font-size: x-large;
+    color:chartreuse;
+    font-weight:1900;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 25px;
+    cursor: pointer;
+    transition:ease-in-out;
+    transition: 1ms;
+}
+
+#home:hover{
+    transform:scale(1.5);
+}
+#menu:hover{
+    transform:scale(1.5);
+}
+#aboutus:hover{
+    transform:scale(1.5);
+}
+
+.home-div{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size:35px;
+    margin-top: 20px;
+    justify-items: center;
+    align-items: center;
+    color:rgb(253, 253, 253);
+    border-top: 20px;  
+}
+
+.menudiv{
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    border: 1px black;
+    padding-top: 15%;
+    padding-left: 7.5%;
+    justify-items: center;
+}
+
+.contactus{
+    color: aliceblue;
+}
+
+.image{
+    width:100px;
+    height: auto;
+    background-color: none;
+    content: icon;
+}
+
+.div{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: darkgray;
+    font-family: 'MyFont2';
+    gap:20px; 
+}
+
+.contactDiv{
+    gap:20px;
+    text-align: center;
+    font-size: 125px;
+}
